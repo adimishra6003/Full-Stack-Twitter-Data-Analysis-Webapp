@@ -6,7 +6,7 @@ It's purpose is to make people know what is trending in the World and India fast
 
 *Try it here*: [*link to App*](https://twitter-dashboard.herokuapp.com/)
 
-**It's features are as described by it's header:**
+**It's features are as described by the header:**
 
 ![Header website](https://user-images.githubusercontent.com/45977202/82545845-db8a3180-9b74-11ea-9c73-e944ae91c3dd.png)
 
@@ -27,3 +27,5 @@ It's purpose is to make people know what is trending in the World and India fast
 * **Sentiment analysis of top 3 trending topics of India**
 
 ![India Senti](https://user-images.githubusercontent.com/45977202/82548790-7f75dc00-9b79-11ea-9d70-418f6c803025.png)
+
+*This webapp is fully responsive. So it can be viewed on any platform.*
