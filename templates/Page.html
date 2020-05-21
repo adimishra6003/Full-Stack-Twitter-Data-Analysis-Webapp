@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Understand what's happening</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid text-center bg-dark text-white">
+		<h1 class="display-3">Analyze <font color="#00acee">"what's happening!"</font></h1>
+		<p class="font-italic display-6">Analyzing <font color="#00acee"><b>Twitter</b> </font>data in Real time</p>
+	</div>
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-sm-4 border-right">
+				<h1>GET: "Data"</h1>
+				<p>from Twitter API</p>
+			</div>
+			<div class="col-sm-4 border-right">
+				<h1>Visualize</h1>
+				<p>Wordclouds and plots of Top trending topics</p>
+			</div>
+			<div class="col-sm-4">
+				<h1>Analyze</h1>
+				<p>Sentiments of General Audience on Twitter</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid pt-5 my-5 text-center">
+		<h1 class="display-4">Trending <font color="#00acee">#Hashtags</font> Worldwide</h1>
+		<img class="my-5 img-fluid" src={{url_for('static', filename="world_cloud.png")}} width="700" height="566">
+	</div>
+	<div class="container-fluid pt-5 my-5 text-center">
+		<h1 class="display-4">Trending <font color="#00acee">#Hashtags</font> in India</h1>
+		<img class="my-5 img-fluid" src={{url_for('static', filename="india_cloud.png")}} width="700" height="566">
+	</div>
+	<div class="container-fluid pt-6 my-3 bg-dark text-white text-center">
+		<h2 class="display-4 my-6">Sentiment Analysis</h2>
+	</div>
+	<div class="text-center lead font-weight-bolder font-italic">
+		<p>Thousands of recent tweets of Top 3 trending hashtags both from the world and India are fetched and analyzed to find the sentiments of people towards these topics and their distribution. (Here, -1 corresponds to Negative, 0 to Neutral and +1 to Positive sentiment).</p>
+	</div>
+	<div class="container-fluid text-center font-weight-bold">
+		<h2 class="display-4 pd-3 pt-3">World Trends</h2>
+		<div class=" row pd-3 pt-3">
+			<div class="col">Topic: {{w_1}}</div>
+			<div class="col">Mean Sentiment: {{w_s_1}}</div>
+		</div>
+		<img class="img-fluid" src={{url_for('static', filename="world_1.jpg")}}>
+
+		<div class="row pd-3 pt-3">
+			<div class="col">Topic: {{w_2}}</div>
+			<div class="col">Mean Sentiment: {{w_s_2}}</div>
+		</div>
+		<img class="img-fluid" src={{url_for('static', filename="world_2.jpg")}}>
+
+		<div class="row pd-3 pt-3">
+			<div class="col">Topic: {{w_3}}</div>
+			<div class="col">Mean Sentiment: {{w_s_3}}</div>
+		</div>
+		<img class="img-fluid" src={{url_for('static', filename="world_3.jpg")}}>
+	</div>
+
+	<div class="container-fluid text-center font-weight-bold">
+		<h2 class="display-4 pd-3 pt-3 text-underline">India Trends</h2>
+		<div class=" row pd-3 pt-3">
+			<div class="col">Topic: {{i_1}}</div>
+			<div class="col">Mean Sentiment: {{i_s_1}}</div>
+		</div>
+		<img class="img-fluid" src={{url_for('static', filename="india_1.jpg")}}>
+
+		<div class="row pd-3 pt-3">
+			<div class="col">Topic: {{i_2}}</div>
+			<div class="col">Mean Sentiment: {{i_s_2}}</div>
+		</div>
+		<img class="img-fluid" src={{url_for('static', filename="india_2.jpg")}}>
+
+		<div class="row pd-3 pt-3">
+			<div class="col">Topic: {{i_3}}</div>
+			<div class="col">Mean Sentiment: {{i_s_3}}</div>
+		</div>
+		<img class="img-fluid pd-6" src={{url_for('static', filename="india_3.jpg")}}>
+	</div>
+	<div class="container-fluid text-center bg-dark text-white">
+		<h5 class="font-weight-light pt-1">&copyAditya Mishra</h5>
+		<!-- <p class="lead">Connect with me:</p> -->
+		<div class="row">
+			<div class="col text-right border-right"><a href="https://www.linkedin.com/in/aditya-mishra-a335b615a/" class="card-link stretched-link">LinkedIn</a>
+			</div>
+			<div class="col text-left"><a href="https://github.com/adimishra6003" class="card-link stretched-link">Github</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
