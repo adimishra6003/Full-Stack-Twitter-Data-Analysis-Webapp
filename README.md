@@ -29,3 +29,15 @@ It's purpose is to make people know what is trending in the World and India fast
 ![India Senti](https://user-images.githubusercontent.com/45977202/82548790-7f75dc00-9b79-11ea-9d70-418f6c803025.png)
 
 *This webapp is fully responsive. So it can be viewed on any platform.*
+
+
+
+
+
+
+
+
+
+
+
+Attempt to alter.
